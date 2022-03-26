@@ -15,10 +15,21 @@ body {
 .clock {
     width: 600px;
     height: 600px;
-    background-color: rgba(255, 255, 255, 80%);
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     border: 2px solid black;
     position: relative;
+}
+.clock .cover {
+    width: 591px;
+    height: 591px;
+    left: 0.5%;
+    top: 0.5%;
+    transform-origin: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: relative;
+    z-index: 8;
 }
 
 .clock .number {
@@ -26,9 +37,11 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    bottom: 0px;
     text-align: center;
     transform: rotate(var(--rotation));
     font-size: 30px;
+    z-index: 9;
 }
 
 .clock .number1 { --rotation: 30deg; }
@@ -87,3 +100,82 @@ body {
     height: 35%;
     background-color: black;
 }
+
+.clock .line {
+    --linerotation: 0;
+    ;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    background-color: black;
+    width: 4px;
+    height: 300px;
+    transform: rotate(var(--linerotation));
+    transform-origin: bottom;
+    z-index: 5;
+}
+
+
+/* First quarter */
+.clock .line1 { --linerotation: 6deg; }
+.clock .line2 { --linerotation: 12deg; }
+.clock .line3 { --linerotation: 18deg; }
+.clock .line4 { --linerotation: 24deg; }
+.clock .line5 { --linerotation: 30deg; }
+.clock .line6 { --linerotation: 36deg; }
+.clock .line7 { --linerotation: 42deg; }
+.clock .line8 { --linerotation: 48deg; }
+.clock .line9 { --linerotation: 54deg; }
+.clock .line10 { --linerotation: 60deg; }
+.clock .line11 { --linerotation: 66deg; }
+.clock .line12 { --linerotation: 72deg; }
+.clock .line13 { --linerotation: 78deg; }
+.clock .line14 { --linerotation: 84deg; }
+.clock .line15 { --linerotation: 90deg; }
+/* Second quarter */
+.clock .line16 { --linerotation: 96deg; }
+.clock .line17 { --linerotation: 102deg; }
+.clock .line18 { --linerotation: 108deg; }
+.clock .line19 { --linerotation: 114deg; }
+.clock .line20 { --linerotation: 120deg; }
+.clock .line21 { --linerotation: 126deg; }
+.clock .line22 { --linerotation: 132deg; }
+.clock .line23 { --linerotation: 138deg; }
+.clock .line24 { --linerotation: 144deg; }
+.clock .line25 { --linerotation: 150deg; }
+.clock .line26 { --linerotation: 156deg; }
+.clock .line27 { --linerotation: 162deg; }
+.clock .line28 { --linerotation: 168deg; }
+.clock .line29 { --linerotation: 174deg; }
+.clock .line30 { --linerotation: 180deg; }
+/* Third quarter */
+.clock .line31 { --linerotation: 186deg; }
+.clock .line32 { --linerotation: 192deg; }
+.clock .line33 { --linerotation: 198deg; }
+.clock .line34 { --linerotation: 204deg; }
+.clock .line35 { --linerotation: 210deg; }
+.clock .line36 { --linerotation: 216deg; }
+.clock .line37 { --linerotation: 222deg; }
+.clock .line38 { --linerotation: 228deg; }
+.clock .line39 { --linerotation: 234deg; }
+.clock .line40 { --linerotation: 240deg; }
+.clock .line41 { --linerotation: 246deg; }
+.clock .line42 { --linerotation: 252deg; }
+.clock .line43 { --linerotation: 258deg; }
+.clock .line44 { --linerotation: 264deg; }
+.clock .line45 { --linerotation: 270deg; }
+/* Fourth quarter */
+.clock .line46 { --linerotation: 276deg; }
+.clock .line47 { --linerotation: 282deg; }
+.clock .line48 { --linerotation: 288deg; }
+.clock .line49 { --linerotation: 294deg; }
+.clock .line50 { --linerotation: 300deg; }
+.clock .line51 { --linerotation: 306deg; }
+.clock .line52 { --linerotation: 312deg; }
+.clock .line53 { --linerotation: 318deg; }
+.clock .line54 { --linerotation: 324deg; }
+.clock .line55 { --linerotation: 330deg; }
+.clock .line56 { --linerotation: 336deg; }
+.clock .line57 { --linerotation: 342deg; }
+.clock .line58 { --linerotation: 348deg; }
+.clock .line59 { --linerotation: 354deg; }
